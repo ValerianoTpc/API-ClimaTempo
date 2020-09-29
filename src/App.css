@@ -31,13 +31,21 @@
 }
 
 .corpo{
-  display: flex;
+  display: grid;
   flex-flow: row wrap;
   align-items: center;
+  background: var(--bg-primary);
   justify-content: center;
   padding-top: 20px;
 }
 
-@media (max-width:700px){
-    
+.corpo .card{
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  margin-top: 10px;
+  background: rgb(75,79,190);
+  background: linear-gradient(0deg, rgba(75,79,190,1) 0%, rgba(107,110,208,1) 100%);
+  border: 0;
+  padding: 20px;
 }
+
